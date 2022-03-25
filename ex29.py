@@ -1,21 +1,10 @@
-'''num = int(input('Estou pensando em um número de 0 a 5, qual é? '))
-if num == 2:
-    print('Você acertou!')
-else:
-    print('Você errou! TENTE DE NOVO! ')
-print('Outra vez?!')
-'''
-from random import randint
-from time import sleep
+#Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80Km/h, 
+# mostre uma mensagem dizendo que ele foi multado. 
+# A multa vai custar R$7,00 por cada Km acima do limite.
 
-pc = randint(0,5) #sorteio do numero
-print('-=-'*20)
-print('Vou pensar em um número entre 0 e 5. Qual é ele? ')
-print('-=-'*20)
-jogador = int(input('Qual é o número? '))#inserção do número
-print('PROCESSANDO...')
-sleep(2)
-if jogador == pc:
-    print('Você acertou e ganhou :"""""( O número é {}'.format(pc))
-else:
-    print('Você é ruim! O número certo é {} e não {} HAHAHAHA!' .format(pc, jogador))
+velocidade = float(input('Insira a velocidade em Km: '))
+if velocidade > 80:
+    multa = (velocidade - 80)* 7
+    print('MULTADO! Você excedeu o limite de velocidade.')
+    print('Sua multa é de: R${:.2f}'.format(multa))
+print('Tenha um bom dia, dirija com segurança.')
