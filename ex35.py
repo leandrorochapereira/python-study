@@ -9,7 +9,7 @@
 
 
 
-r1 = float(input('\033[1;31;40mInsira a 1ª reta: '))
+r1 = float(input('Insira a 1ª reta: '))
 r2 = float(input('Insira a 2ª reta: '))
 r3 = float(input('Insira a 3ª reta: '))
 
