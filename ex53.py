@@ -1,9 +1,6 @@
 #Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, 
 #desconsiderando os espaços. Exemplos de palíndromos:
 
-from operator import inv
-
-
 frase = str(input('Digite uma frase: ')).strip().upper() #Strip pra cortar os espaços e upper para não ter erro entre minuscula e maiuscula
 palavras = frase.split()#separando a frase em palavras em uma lista
 junto = ''.join(palavras)#juntando a frase pra eliminar os espaços
