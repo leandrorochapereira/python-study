@@ -27,13 +27,13 @@ while tipo not in 'PI':
         print(f'Você jogou {valorjog} e o computador jogou {valorcomp}. Total de {total}')
 
         if tipo == 'P' and total % 2 == 0:
-            print('Você venceu! ')
+            print('Você ganhou! ')
             v += 1
         elif tipo == 'I' and total % 2 != 0:
             print('Você ganhou!')
             v += 1
         else:
-            print('Você perdeu')
+            print('Você perdeu!')
             break
         '''if tipo == 'I' and total % 2 != 0:
             print('Você ganhou!')
